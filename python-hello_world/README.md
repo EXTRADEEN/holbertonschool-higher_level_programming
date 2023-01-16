@@ -6,3 +6,4 @@
 5-print_string.py - code that prints a string followed by ist first 9 characters
 6-concat.py - code that concatenate 2 strings
 7-edges.py - Copy-Cut-Paste
+8-concact_edges.py - Create a new sentence
