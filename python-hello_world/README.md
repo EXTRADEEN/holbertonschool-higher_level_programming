@@ -7,3 +7,4 @@
 6-concat.py - code that concatenate 2 strings
 7-edges.py - Copy-Cut-Paste
 8-concact_edges.py - Create a new sentence
+9-easter_egg.py - script that prints “The Zen of Python”, by TimPeters
