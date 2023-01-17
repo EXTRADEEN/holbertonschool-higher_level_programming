@@ -4,5 +4,5 @@ def uppercase(str):
 
     for i in range(ln):
         for str[i] >= 'a' and str[i] <= 'z':
-
-            str[i] = chr(ord(str[i]) - 31)
+            str[i] = chr(ord(str[i]) - 32)
+            print(str[i])
