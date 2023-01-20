@@ -11,3 +11,5 @@
 10-add.py - function that adds two integers
 11-pow.py - function that computes a to power b
 12-fizzbuzz.py - function that prints numbers from 1 to 100 separated by a space
+100-print_tebahpla.py - program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase)
+101-remove_char_at.py - function that creates a copy of the string, removing the character at the position n (not the Python way, the “C array index”)
