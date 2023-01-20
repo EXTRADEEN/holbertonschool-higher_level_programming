@@ -8,3 +8,13 @@
 7-edges.py - Copy-Cut-Paste
 8-concact_edges.py - Create a new sentence
 9-easter_egg.py - script that prints “The Zen of Python”, by TimPeters
+100-write.py - script that prints exacty and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line
+101-compile - a script that compiles a Python script file
+102-magic_calculation.py -  Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
+
+  3           0 LOAD_CONST               1 (98)
+              3 LOAD_FAST                0 (a)
+              6 LOAD_FAST                1 (b)
+              9 BINARY_POWER
+             10 BINARY_ADD
+             11 RETURN_VALUE
