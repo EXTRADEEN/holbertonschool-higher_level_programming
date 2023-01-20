@@ -6,6 +6,8 @@ if __name__ == "__main__":
     i = i - 1
     if i == 0:
         print("{} arguments.".format(i))
+    elif i == 1:
+        print("{} argument:".format(i))
     else:
         print("{} arguments:".format(i))
     for a in range(0, len(sys.argv)):
