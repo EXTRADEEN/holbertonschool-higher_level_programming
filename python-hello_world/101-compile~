@@ -1,8 +1,0 @@
-#!/bin/bash
-import os
-import py_compyle
-
-pyfile = os.environ.get("PYFILE")
-py_compile.compile(pyfile)
-output_filename = f"{pyfile}c"
-os.rename(f"{pyfile}c", output_filename
