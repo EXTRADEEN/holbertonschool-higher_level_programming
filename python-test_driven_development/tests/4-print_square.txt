@@ -20,9 +20,9 @@ Test with an integer
     ##########
     ##########
 
-    >>> print_square(0)
+    >>> print_square(0) # doctest: +NORMALIZE_WHITESPACE
     <BLANKLINE>
-    
+
     >>> print_square(1)
     #
 
