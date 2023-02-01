@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """
     This module contain a function print_square(size)
     that prints a square with character # based on size.
