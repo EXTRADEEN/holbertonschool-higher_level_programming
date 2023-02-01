@@ -12,6 +12,7 @@
 def matrix_divided(matrix, div):
     """ Divides a matrix and returns a new matrix """
    for row in matrix:
+    
         for data in row:
             if type(data) is not int and type(data) is not float:
                 raise TypeError("matrix must be a matrix "
