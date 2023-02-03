@@ -45,7 +45,7 @@ class Rectangle:
     def __del__(self):
         """ Calls when an instance is being deleted """
 
-        print("Bye rectangle...") 
+        print("Bye rectangle...")
 
     @property
     def width(self):
