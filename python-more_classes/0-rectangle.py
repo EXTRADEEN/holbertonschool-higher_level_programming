@@ -8,4 +8,3 @@ class Rectangle:
     """ An empty rectangle class """
 
     pass
-    
