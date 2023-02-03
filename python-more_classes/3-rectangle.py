@@ -31,7 +31,6 @@ class Rectangle:
         for x in range(self.__height):
             for y in range(self.width):
                 print ("#", end="")
-            print()
 
         return string
 
