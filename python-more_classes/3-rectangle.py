@@ -30,10 +30,10 @@ class Rectangle:
 
         for x in range(self.__height):
             for y in range(self.width):
-                print ("#", end="")
-            print("", end="")
+                string += '#'
+            string += '\n'
 
-        return string
+        return string[:-1]
 
     @property
     def width(self):
