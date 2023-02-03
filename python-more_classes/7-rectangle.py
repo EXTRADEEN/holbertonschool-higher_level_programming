@@ -19,7 +19,7 @@ class Rectangle:
     """
 
     number_of_instances = 0
-    print_symbol = '#'
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """ Initialize a new instance """
@@ -34,11 +34,11 @@ class Rectangle:
 
         string = ""
         if self.__height == 0 or self.__width == 0:
-            return string
+            return ''
 
         for x in range(self.__height):
             for y in range(self.__width):
-                string += '#'
+                string += str(self.print_symbol)
             string += '\n'
 
         return string[:-1]
