@@ -76,29 +76,39 @@ l1 = [1, 2, 3]
 l2 = [4, 5, 6]
 assign_value(l1, l2)
 print(l1)
+
 18-answer - Write a function def copy_list(a_list): that returns a copy of a list.
+
 19-copy_list - Write a function def copy_list(a_list): that returns a copy of a list
 20-answer - a = ()
+
 Is a a tuple? Answer with Yes or No.
 21-answer - a = (1, 2)
+
 Is a a tuple? Answer with Yes or No.
 22-answer - a = (1)
+
 Is a a tuple? Answer with Yes or No.
 23-answer - a = (1, )
+
 Is a a tuple? Answer with Yes or No.
 24-answer - What does this script print?
+
 a = (1)
 b = (1)
 a is b
 25-answer - What does this script print?
+
 a = (1, 2)
 b = (1, 2)
 a is b
 26-answer - What does this script print?
+
 a = ()
 b = ()
 a is b
 27-answer - 
+
 >>> id(a)
 139926795932424
 >>> a
@@ -107,6 +117,7 @@ a is b
 >>> id(a)
 Will the last line of this script print 139926795932424? Answer with Yes or No.
 28-answer - 
+
 >>> a
 [1, 2, 3]
 >>> id (a)
