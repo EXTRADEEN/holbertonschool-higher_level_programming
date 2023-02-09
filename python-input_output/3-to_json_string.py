@@ -1,4 +1,4 @@
-#!/usr.bin/python3
+#!/usr/bin/python3
 """
     Module that creates a function: to_json_string
 """
