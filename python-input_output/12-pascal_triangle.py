@@ -8,17 +8,17 @@ def pascal_triangle(n):
     """ Returns a list of lists of integers
         representing the Pascal's triangle of n
     """
-    triangle = []
+    pas_tri = []
     if n <= 0:
-        return triangle
+        return pas_tri
     
     for i in range(n):
-        row = [1]
+        row = []
         for j in range(i + 1):
             if (j == 0) or (j == i):
                 r = 1
             else:
-                r = triangle[i - 1][j - 1] + triangle[i - 1][j]
+                r = pas_tri[i - 1][j - 1] + pas_tri[i - 1][j]
             row.append(r)
-        triangle.append(row)
-    return triangle
+        pas_tri.append(row)
+    return pas_tri
