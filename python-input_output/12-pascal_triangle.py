@@ -11,7 +11,7 @@ def pascal_triangle(n):
     pas_tri = []
     if n <= 0:
         return pas_tri
-    
+
     for i in range(n):
         row = []
         for j in range(i + 1):
