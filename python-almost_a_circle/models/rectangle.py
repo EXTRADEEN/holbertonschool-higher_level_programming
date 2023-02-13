@@ -25,6 +25,8 @@ class Rectangle(Base):
     def width(self, value):
         """ set the width property """
 
+        self.__width = value
+
     @property
     def height(self):
         """ get the height proprety """
@@ -34,6 +36,8 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """ set the height property """
+
+        self.__height = value
 
     @property
     def x(self):
@@ -45,6 +49,8 @@ class Rectangle(Base):
     def x(self, value):
         """ set the x property """
 
+        self.__x = value
+
     @property
     def y(self):
         """ get the y proprety """
@@ -54,3 +60,5 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """ set the y property """
+
+        self.__y = value
