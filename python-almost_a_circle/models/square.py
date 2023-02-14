@@ -39,21 +39,21 @@ class Square(Rectangle):
 
         if args:
             for i, v in enumerate(args):
-                if i == 1:
+                if i == 0:
                     self.id = v
-                if i == 2:
+                elif i == 1:
                     self.size = v
-                if i == 3:
+                elif i == 2:
                     self.x = v
-                if i == 4:
+                elif i == 3:
                     self.y = v
         else:
             for key, value in kwargs.items():
                 if key == "id":
                     self.id = value
-                if key == "size":
+                elif key == "size":
                     self.size = value
-                if key == "x":
+                elif key == "x":
                     self.x = value
-                if key == "y":
+                elif key == "y":
                     self.y = value
