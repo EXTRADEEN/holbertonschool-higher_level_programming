@@ -142,5 +142,4 @@ class Rectangle(Base):
                     self.x = value
                 if key == "y":
                     self.y = value
-
-                
+           
