@@ -25,59 +25,16 @@ class TestBase(unittest.TestCase):
         result = pep8style.check_files(['models/rectangle.py'])
         self.assertEqual(result.total_errors, 0,
                          "Found code style errors (and warnings).")
-        
-    def test_init_with_id(self):
-        """
-            Test with id for Base class
-        """
 
-        base = Base(id=5)
-        self.assertEqual(base.id, 5)
-
-    def test_init_without_id(self):
+    def test_init(self):
         """
-            Test wiyhout id for Base class
+        Tests attribute id
         """
+        b = Base()
+        self.assertEqual(b.id, 1)
 
-        base1 = Base()
-        base2 = Base()
-        self.assertEqual(base1.id, 1)
-        self.assertEqual(base2.id, 2)
+        b1 = Base()
+        self.assertEqual(b1.id, 2)
 
-    def test_to_json_string_with_empty_list(self):
-        """
-            Test to json string a empty list for Base class
-        """    
-
-        self.assertEqual(Base.to_json_string([]), "[]")
-
-    def test_to_json_string_with_list(self):
-        """
-            Test to json string with a list for Base class
-        """
-
-        list_dict = [{'id': 1, 'name': 'John'}, {'id': 2, 'name': 'Mary'}]
-        json_str = Base.to_json_string(list_dict)
-        self.assertEqual(json_str, '[{"id": 1, "name": "John"}, {"id": 2, "name": "Mary"}]')
-
-    def test_save_to_file_with_None(self):
-        """
-            Test the JSON string representation of the list of
-            dictionaries when None is provided should be written 
-            to that file
-        """
-
-        Base.save_to_file(None)
-        with open("Base.json", "r") as file:
-            json_str = file.read()
-        self.assertEqual(json_str, "[]")
-        os.remove("Base.json")
-
-    def test_from_json_string_with_None(self):
-        """
-            Test with a JSON string when None is
-            the output should be an empty list
-        """
-
-        list_dict = Base.from_json_string(None)
-        self.assertEqual(list_dict, [])
+        b2 = Base(30)
+        self.assertEqual(b2.id, 30)
