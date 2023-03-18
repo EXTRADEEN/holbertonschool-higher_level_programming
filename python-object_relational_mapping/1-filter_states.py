@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-''' script that lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa '''
+''' script that lists all states with a name starting
+    with N (upper N) from the database hbtn_0e_0_usa
+'''
 
 import MySQLdb
 import sys
@@ -16,7 +18,9 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
 
-    ''' Executing a SELECT query to get all the states whose name starts with 'N' in case-sensitive manner '''
+    ''' Executing a SELECT query to get all the states whose name
+        starts with 'N' in case-sensitive manner
+    '''
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' "
