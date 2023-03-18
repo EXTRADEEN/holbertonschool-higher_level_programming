@@ -32,5 +32,5 @@ if __name__ == "__main__":
         print(state)
 
     ''' close database connection '''
-
+    cur.close()
     db.close()
