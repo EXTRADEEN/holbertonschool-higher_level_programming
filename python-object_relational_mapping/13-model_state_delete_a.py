@@ -14,14 +14,15 @@ if __name__ == '__main__':
     password = sys.argv[2]
     database = sys.argv[3]
 
-    engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}"
-                           .format(sys.argv[1], sys.argv[2], sys.argv[3]))
+    engine = create_engine("mysql+mysqldb://{}:{}@localhost:3306/{}".
+                           format(sys.argv[1], sys.argv[2], sys.argv[3]))
 
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    for state in session.query(State).filter(State.name.contains("a")).all():
+    states = session.query(State).filter(State.name.contains('a')).all()
+    for state in states:
         session.delete(state)
 
     session.commit()
