@@ -3,7 +3,7 @@
 // Defines a new class Rectangle
 
 class Rectangle {
-    constructor(){
-    }
+  constructor () {
+  }
 }
 module.exports = Rectangle;
