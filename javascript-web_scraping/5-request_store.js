@@ -3,7 +3,7 @@
 // script that gets the contents of a webpage and stores it in a file
 
 const fs = require('fs');
-const request = require('request-promise-native');
+const request = require('request');
 
 const file = process.argv[2];
 const fInput = process.argv[3];
