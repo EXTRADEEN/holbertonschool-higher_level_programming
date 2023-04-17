@@ -9,8 +9,7 @@ const url = `https://swapi-api.hbtn.io/api/films/${objID}`;
 request.get(url, (error, response, body) => {
   if (error) {
     console.error(error);
-    return;
   }
-
-  console.log(body.title);
+  const mov = JSON.parse(body);
+  console.log(mov.title);
 });
